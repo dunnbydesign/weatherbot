@@ -1,0 +1,35 @@
+@mixin nav-list($color, $hover-color) {
+  nav {
+    ul { text-align: right; }
+
+    li {
+      display: inline-block;
+      margin: 0 0.2rem;
+      padding: 0.5rem 0.75rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color;
+    }
+
+    a:hover { color: $hover-color; }
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  -ms-border-radius:     $radius;
+  border-radius:         $radius;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+
+  &:after { clear: both; }
+}

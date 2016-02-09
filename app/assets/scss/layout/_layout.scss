@@ -1,0 +1,20 @@
+header {
+  padding: $pad-vert-primary $pad-horiz-primary;
+  background-color: $dark-blue;
+
+  h1 {
+    float: left;
+    font-size: 2rem;
+  }
+
+  @include nav-list($white, $vivid-blue);
+}
+
+main { padding: $pad-vert-primary $pad-horiz-primary 0 $pad-horiz-primary; }
+
+footer {
+  padding: $pad-vert-primary $pad-horiz-primary;
+  text-align: center;
+  color: $dark-gray;
+  font-style: italic;
+}
